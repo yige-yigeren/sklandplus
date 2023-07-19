@@ -8,76 +8,76 @@ test('all formats', (t) => {
     caption: [
       {
         type: 'text',
-        id: '0',
+        id: '0'
       },
       {
         type: 'emoji',
-        id: 'yingbao-1__yingbao_cheers',
+        id: 'yingbao-1__yingbao_cheers'
       },
       {
         type: 'emoji',
-        id: 'yingbao-1__yingbao_sleepy',
+        id: 'yingbao-1__yingbao_sleepy'
       },
       {
         type: 'emoji',
-        id: 'amiya-1__amiya_smile',
+        id: 'amiya-1__amiya_smile'
       },
       {
         type: 'emoji',
-        id: 'amiya-1__amiya_ye',
+        id: 'amiya-1__amiya_ye'
       },
       {
         type: 'text',
-        id: '2',
+        id: '2'
       },
       {
         type: 'text',
-        id: '4',
+        id: '4'
       },
       {
         type: 'text',
-        id: '5',
+        id: '5'
       },
       {
         type: 'text',
-        id: '6',
+        id: '6'
       },
       {
         type: 'text',
-        id: '7',
+        id: '7'
       },
       {
         type: 'text',
-        id: '8',
+        id: '8'
       },
       {
         type: 'text',
-        id: '9',
+        id: '9'
       },
       {
         type: 'text',
-        id: '10',
+        id: '10'
       },
       {
         type: 'text',
-        id: '11',
+        id: '11'
       },
       {
         type: 'text',
-        id: '12',
+        id: '12'
       },
       {
         type: 'text',
-        id: '13',
+        id: '13'
       },
       {
         type: 'text',
-        id: '14',
+        id: '14'
       },
       {
         type: 'text',
-        id: '15',
-      },
+        id: '15'
+      }
     ],
     imageListSlice: [
       {
@@ -85,110 +85,110 @@ test('all formats', (t) => {
         height: 680,
         size: 59225,
         url: 'https://bbs.hycdn.cn/image/2023/07/19/990dfc76c3c1a38a097250ccefe9f902.jpg',
-        id: '23',
-      },
+        id: '23'
+      }
     ],
     videoListSlice: [],
     textSlice: [
       {
         id: '0',
-        c: 'rich text content',
+        c: 'rich text content'
       },
       {
         id: '2',
-        c: 'Link Title (?)',
+        c: 'Link Title (?)'
       },
       {
         id: '4',
-        c: 'Header 1',
+        c: 'Header 1'
       },
       {
         id: '5',
-        c: 'Header 2',
+        c: 'Header 2'
       },
       {
         id: '6',
-        c: 'Header 3',
+        c: 'Header 3'
       },
       {
         id: '7',
-        c: 'Bold',
+        c: 'Bold'
       },
       {
         id: '8',
-        c: ' ',
+        c: ' '
       },
       {
         id: '9',
-        c: 'Italic',
+        c: 'Italic'
       },
       {
         id: '10',
-        c: ' ',
+        c: ' '
       },
       {
         id: '11',
-        c: 'Underline',
+        c: 'Underline'
       },
       {
         id: '12',
-        c: ' ',
+        c: ' '
       },
       {
         id: '13',
-        c: 'Bold Italic',
+        c: 'Bold Italic'
       },
       {
         id: '14',
-        c: ' ',
+        c: ' '
       },
       {
         id: '15',
-        c: 'Bold Underline',
+        c: 'Bold Underline'
       },
       {
         id: '16',
-        c: ' ',
+        c: ' '
       },
       {
         id: '17',
-        c: 'Italic Underline',
+        c: 'Italic Underline'
       },
       {
         id: '18',
-        c: 'Green Text',
+        c: 'Green Text'
       },
       {
         id: '19',
-        c: ' ',
+        c: ' '
       },
       {
         id: '20',
-        c: 'Blue ',
+        c: 'Blue '
       },
       {
         id: '21',
-        c: 'Text',
+        c: 'Text'
       },
       {
         id: '22',
-        c: ' Regular',
-      },
+        c: ' Regular'
+      }
     ],
     linkSlice: [
       {
         id: '3',
-        c: 'http://captive.apple.com',
-      },
+        c: 'http://captive.apple.com'
+      }
     ],
     bvSlice: [
       {
         id: '1',
-        c: 'BV1xx411c7mD',
-      },
+        c: 'BV1xx411c7mD'
+      }
     ],
     atSlice: [],
-    tagIdsSlice: [474, 306],
+    tagIdsSlice: [474, 306]
   };
 
   const b = new DocumentBuilder();
@@ -230,7 +230,7 @@ test('all formats', (t) => {
       width: 662,
       height: 680,
       size: 59225,
-      url: 'https://bbs.hycdn.cn/image/2023/07/19/990dfc76c3c1a38a097250ccefe9f902.jpg',
+      url: 'https://bbs.hycdn.cn/image/2023/07/19/990dfc76c3c1a38a097250ccefe9f902.jpg'
     })
   );
 
