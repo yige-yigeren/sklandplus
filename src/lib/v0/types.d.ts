@@ -106,7 +106,7 @@ export namespace RemoteV0 {
   export interface PostFormatElementLink {
     type: 'link';
     /**
-     * A reference of the text content of the linkified text. You can find the actual text content in `Post.textSlice`.
+     * A reference of the text content of the link-if-ied text. You can find the actual text content in `Post.textSlice`.
      */
     contentId: string;
     /**
