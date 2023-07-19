@@ -16,7 +16,7 @@ export class DocumentBuilder {
 
   text(
     content: string,
-    style?: RemoteV0.PostFormatElementTextStyleAttributes
+    style?: RemoteV0.PostFormatElementTextStyleAttributes,
   ): RemoteV0.PostFormatElementText {
     const sliceId = this.nextSliceId();
 
@@ -86,7 +86,7 @@ export class DocumentBuilder {
   }
 
   image(
-    image: Omit<RemoteV0.ImageListElement, 'id'>
+    image: Omit<RemoteV0.ImageListElement, 'id'>,
   ): RemoteV0.PostFormatElementImage {
     const sliceId = this.nextSliceId();
     const element: RemoteV0.PostFormatElementImage = {
