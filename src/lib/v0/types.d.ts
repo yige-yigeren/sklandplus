@@ -1,18 +1,18 @@
 export namespace RemoteV0 {
   export interface Post {
-    format: string;
-    caption: CaptionElement[];
-    imageListSlice: ImageListElement[];
-    videoListSlice: never[];
-    textSlice: SliceElement[];
-    linkSlice: SliceElement[];
-    bvSlice: SliceElement[];
-    atSlice: never[];
-    tagIdsSlice: number[];
+    format: string
+    caption: CaptionElement[]
+    imageListSlice: ImageListElement[]
+    videoListSlice: never[]
+    textSlice: SliceElement[]
+    linkSlice: SliceElement[]
+    bvSlice: SliceElement[]
+    atSlice: never[]
+    tagIdsSlice: number[]
   }
 
   export interface SliceElement {
-    id: string;
+    id: string
 
     /**
      * Content of the slice.
@@ -20,26 +20,26 @@ export namespace RemoteV0 {
      * - For `linkSlice`, this can be either the text content or the link URL.
      * - For `bvSlice`, this is the Bilibili Video BVID.
      */
-    c: string;
+    c: string
   }
 
   export interface CaptionElement {
-    type: 'text' | 'emoji';
-    id: string;
+    type: 'text' | 'emoji'
+    id: string
   }
 
   export interface ImageListElement {
-    id: string;
-    width: number;
-    height: number;
-    size: number;
-    url: string;
+    id: string
+    width: number
+    height: number
+    size: number
+    url: string
   }
 
   // Post `format`
   export interface PostFormat {
-    version: 0;
-    data: PostFormatElement[];
+    version: 0
+    data: PostFormatElement[]
   }
 
   export type PostFormatElement =
@@ -48,78 +48,78 @@ export namespace RemoteV0 {
     | PostFormatElementBVideo
     | PostFormatElementEmoji
     | PostFormatElementLink
-    | PostFormatElementImage;
+    | PostFormatElementImage
 
   export interface PostFormatElementParagraph {
-    type: 'paragraph';
-    contents: PostFormatElement[];
+    type: 'paragraph'
+    contents: PostFormatElement[]
     /**
      * Header level.
      * `undefined` means this `paragraph` is not a header.
      */
-    header?: number;
+    header?: number
   }
 
   export interface PostFormatElementTextStyleAttributes {
-    bold?: boolean;
-    italic?: boolean;
+    bold?: boolean
+    italic?: boolean
     /**
      * Underline style.
      * - `1`: single underline.
      * - `2`: double underline (?).
      * - `undefined`: no underline.
      */
-    underline?: number;
-    foregroundColor?: string;
+    underline?: number
+    foregroundColor?: string
   }
 
   export interface PostFormatElementText
     extends PostFormatElementTextStyleAttributes {
-    type: 'text';
+    type: 'text'
     /**
      * A reference of text content at this element. You can find the actual text content in `Post.textSlice`.
      * @example 0
      */
-    contentId: string;
+    contentId: string
   }
 
   export interface PostFormatElementBVideo {
-    type: 'b_video';
+    type: 'b_video'
     /**
      * A reference of the Bilibili Video ID.
      * You can find the actual Bilibili Video ID in `Post.bvSlice`.
      * @example: `1`
      */
-    bvId: string;
+    bvId: string
   }
 
   export interface PostFormatElementEmoji {
-    type: 'emoji';
+    type: 'emoji'
     /**
      * The actual ID of an emoji.
      * @example `yingbao-1__yingbao_cheers`: 鹰宝庆祝
      * @example `amiya-1__amiya_smile`: 阿米娅微笑
      */
-    id: string;
+    id: string
   }
 
   export interface PostFormatElementLink {
-    type: 'link';
+    type: 'link'
     /**
      * A reference of the text content of the link-if-ied text. You can find the actual text content in `Post.textSlice`.
      */
-    contentId: string;
+    contentId: string
     /**
      * A reference of the link URL. You can find the actual link URL in `Post.linkSlice`.
      */
-    linkId: string;
+    linkId: string
   }
 
   export interface PostFormatElementImage {
-    type: 'image';
+    type: 'image'
     /**
      * A reference of the image. You can find the actual image in `Post.imageListSlice`.
      */
-    imageId: string;
+    imageId: string
   }
 }
