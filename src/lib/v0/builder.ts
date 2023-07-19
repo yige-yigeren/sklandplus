@@ -100,6 +100,12 @@ export class DocumentBuilder {
     return element
   }
 
+  divider(id: 0 | 1 | 2 | 3 | 4): RemoteV0.PostFormatElementDividingLine {
+    const element: RemoteV0.PostFormatElementDividingLine = { type: 'dividing_line', id, children: [{ text: '' }] }
+    this.formatData.push(element)
+    return element
+  }
+
   document(...contents: RemoteV0.PostFormatElement[]): this {
     this.formatData.push(...contents)
     return this

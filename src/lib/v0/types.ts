@@ -49,6 +49,7 @@ export namespace RemoteV0 {
     | PostFormatElementEmoji
     | PostFormatElementLink
     | PostFormatElementImage
+    | PostFormatElementDividingLine
 
   export interface PostFormatElementParagraph {
     type: 'paragraph'
@@ -121,5 +122,16 @@ export namespace RemoteV0 {
      * A reference of the image. You can find the actual image in `Post.imageListSlice`.
      */
     imageId: string
+  }
+
+  export interface PostFormatElementDividingLine {
+    type: 'dividing_line'
+
+    /**
+     * The style of the dividing line.
+     */
+    id: 0 | 1 | 2 | 3 | 4
+
+    children: [{ text: '' }] // I just don't get it. Why tf is this here?
   }
 }
