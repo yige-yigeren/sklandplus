@@ -5,7 +5,7 @@
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/GalvinGao/@sklandplus/post",
+  "repository": "https://github.com/GalvinGao/sklandplus",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -39,7 +39,7 @@
     "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=18"
   },
   "dependencies": {},
   "devDependencies": {
