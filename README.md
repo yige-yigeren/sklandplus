@@ -1,5 +1,5 @@
 # @sklandplus/post
 
-[![Preview](/GalvinGao/sklandplus/raw/main/docs/preview.png)](#)
+![@sklandplus/post Preview](https://github.com/GalvinGao/sklandplus/blob/main/docs/preview.png?raw%253Dtrue)
 
 Edit posts in Hypergryph Community `skland` without frustration
